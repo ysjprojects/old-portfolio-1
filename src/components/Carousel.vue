@@ -1,6 +1,6 @@
 
 <template>
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-wrap="false" data-bs-ride="carousel" data-bs-interval="false">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -75,9 +75,9 @@ export default {
     handleScroll(e) {
           var xAxis = e.deltaX;
           var yAxis = e.deltaY;
-          if (yAxis > 0 || xAxis > 0) {
+          if (yAxis > 0 || xAxis < 0) {
             document.getElementById("prevBtn").click()
-          } else if (yAxis < 0 || xAxis < 0) {
+          } else if (yAxis < 0 || xAxis > 0) {
             document.getElementById("nextBtn").click()
           }
           console.log(xAxis,yAxis)

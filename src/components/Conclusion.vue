@@ -1,43 +1,71 @@
 <template>
     <div id="main">
         <div class="heart">
-  ❤
-</div>
-<div class="text">
-  <p>
-    T
-  </p>
-  <p>
-    H
-  </p>
-  <p>
-    A
-  </p>
-  <p>
-    N
-  </p>
-  <p>
-    K
-  </p>
-  <p>
-    &nbsp;
-  </p>
-  <p>
-    Y
-  </p>
-  <p>
-    0
-  </p>
-  <p>
-    U
-  </p>
-</div>
+            ❤
+        </div>
+        <div class="text">
+            <p>
+                T
+            </p>
+            <p>
+                H
+            </p>
+            <p>
+                A
+            </p>
+            <p>
+                N
+            </p>
+            <p>
+                K
+            </p>
+            <p>
+                &nbsp;
+            </p>
+            <p>
+                Y
+            </p>
+            <p>
+                0
+            </p>
+            <p>
+                U
+            </p>
+        </div>
+
+        <div class = "socials-div">
+            <div style="display:inline-block;margin-left:0.25vw;margin-right:0.25vw" v-for="item in socials" :key="item">
+                <Social :imgurl="item.imgurl" :siteurl="item.siteurl"/>   
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
+import Social from "./Social.vue"
 export default {
     name:"Conclusion",
+    components: {
+        Social,
+    },
+    data: function() {
+        return {
+            socials: [
+                {"imgurl":"github.png",
+                "siteurl":"https://github.com/ysjprojects",
+                },
+                {"imgurl":"linkedin.png",
+                "siteurl":"https://linkedin.com/in/yu-shi-jie-b8a36b129"
+                },
+                {"imgurl":"reddit.png",
+                "siteurl":"https://www.reddit.com/user/sjtopkek"
+                },
+                {"imgurl":"email.png",
+                "siteurl":"mailto:yshijie1999@gmail.com"
+                },
+            ]
+        }
+    }
     
 }
 </script>
@@ -53,6 +81,13 @@ export default {
     background: -webkit-linear-gradient(to right, #ffd452, #544a7d);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ffd452, #544a7d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+
+.socials-div{
+    position:absolute;
+    bottom:7.5vh;
+    left:50%;
+    transform: translateX(-50%);
 }
 .heart {
   color:#fff;

@@ -1,11 +1,11 @@
 <template>
     <div @mouseover="addOverlay" @mouseout="removeOverlay" class="medal square-frame" :style="applyStyle">
-        <div v-show="show === true" class="overlay">
+        <div v-show="show===true" class="overlay">
         </div>
-        <div v-show="show === true" class="overlay-text">
+        <div v-show="show===true" class="overlay-text">
                 <span style="font-size:1.2vw">{{name}}</span>
-                <div style="height:1vw"></div>
-                <span style="font-size:1vw;color:#A9A9A9">{{year}}</span>
+                <div style="height:0.5vw"></div>
+                <span style="font-size:0.9vw;color:#A9A9A9">{{year}}</span>
         </div>
         <img :src="require(`@/assets/awards/${src}`)" :alt="name"/>
     </div>
@@ -99,6 +99,7 @@ img {
     left:50%;
     top:50%;
     transform: translate(-50%,-50%);
+    line-height:1.2vw !important;
 }
 
 span {
