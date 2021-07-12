@@ -75,7 +75,7 @@ $viewport-thereshold: $hexagon-width + $hexagon-margin;
 .project-text {
     position: absolute;
     left:2.5%;
-    bottom:2.5%;
+    bottom:0;
     width:50vw;
 }
 

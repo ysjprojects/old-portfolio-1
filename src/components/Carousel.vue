@@ -65,23 +65,23 @@ export default {
     Conclusion
   },
   created() {
-    window.addEventListener('scroll', this.handleScroll)
+    window.addEventListener('wheel', this.handleScroll)
   },
   unmounted() {
-    window.removeEventListener('scroll',this.handleScroll)
+    window.removeEventListener('wheel',this.handleScroll)
   },
 
   methods: {
-    handleScroll() {
-    
-      var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-      if (st > 0){
-          // downscroll code
-          window.getElementById("nextBtn").click()
-      } else {
-          // upscroll code
-          window.getElementById("prevBtn").click()
-      }
+    handleScroll(e) {
+          var xAxis = e.deltaX;
+          var yAxis = e.deltaY;
+          if (yAxis > 0 || xAxis > 0) {
+            document.getElementById("prevBtn").click()
+          } else if (yAxis < 0 || xAxis < 0) {
+            document.getElementById("nextBtn").click()
+          }
+          console.log(xAxis,yAxis)
+          
     }
   }
 };
