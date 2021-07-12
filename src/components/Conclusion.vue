@@ -1,5 +1,6 @@
 <template>
     <div id="main">
+        <img style="position:absolute;width:100%;left:0;z-index:200" src="../assets/yryr.gif" alt="..."/>
         <div class="heart">
             ❤
         </div>
