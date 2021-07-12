@@ -1,6 +1,6 @@
 <template>
     <div id="main">
-        <div class="container" style="position:relative">
+        <div class="container" style="position:relative;top:50%;transform:translateY(-50%);">
             <div id="text-box">
                 <div v-html="content" style="margin: 0 auto">
                 </div>
@@ -69,18 +69,18 @@ export default {
                 "src":"nodejs.png"},
                 
             ],
-            content: '<span style="font-size:3rem">My Skills</span><div style="width:60px;border-top: 3.5px solid #A9A9A9;margin: 0 auto;"></div><p style="margin-top:10px">hover over the logos for more details</p>',
+            content: '<span style="font-size:7.5vh">My Skills</span><div style="width:5vw;border-top: 0.5vh solid #A9A9A9;margin: 0 auto;"></div><p style="margin-top:2vh;font-size:2vh">hover over the logos for more details</p>',
             timer:null
         }
     },
     methods: {
         loadSkillInfo: function(name, experience){
             clearTimeout(this.timer)
-            this.content = `<span style="font-size:3rem">${name}</span><br><h3>${experience}<h3>`
+            this.content = `<span style="font-size:7.5vh">${name}</span><br><span style="font-size:3.5vh">${experience}</span>`
             return
         },
         unloadSkillInfo: function(){
-            this.timer = setTimeout(() => this.content = '<span style="font-size:3rem">My Skills</span><div style="width:60px;border-top: 3.5px solid #A9A9A9;margin: 0 auto;"></div><p style="margin-top:10px">hover over the logos for more details</p>', 250);
+            this.timer = setTimeout(() => this.content = '<span style="font-size:7.5vh">My Skills</span><div style="width:5vw;border-top: 0.5vh solid #A9A9A9;margin: 0 auto;"></div><p style="margin-top:2vh;font-size:2vh">hover over the logos for more details</p>', 250);
             return
         }
     }
@@ -93,7 +93,6 @@ export default {
 #main {
     width: 100vw;
     height: 100vh;
-    padding-top:2.5%;
     background: #C33764;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -113,13 +112,14 @@ export default {
 
 .circle-container {
   position: relative;
-  width: 36em;
-  height: 36em;
+  width: 75vh;
+  height: 75vh;
   border-radius: 50%;
   padding: 0;
   list-style: none;
-  margin: 5em auto 0;
-  border: double 15px tomato;
+  margin: 0 auto 0;
+  border: double 2vh tomato;
+ 
 
 }
 .circle-container > * {
@@ -127,54 +127,54 @@ export default {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -2.5em;
-  width: 5em;
-  height: 5em;
+  margin: -5vh;
+  width: 10vh;
+  height: 10vh;
 }
 .circle-container > *:nth-of-type(1) {
-  transform: rotate(0deg) translate(18em) rotate(0deg);
+  transform: rotate(0deg) translate(37.5vh) rotate(0deg);
 }
 .circle-container > *:nth-of-type(2) {
-  transform: rotate(24deg) translate(18em) rotate(-24deg);
+  transform: rotate(24deg) translate(37.5vh) rotate(-24deg);
 }
 .circle-container > *:nth-of-type(3) {
-  transform: rotate(48deg) translate(18em) rotate(-48deg);
+  transform: rotate(48deg) translate(37.5vh) rotate(-48deg);
 }
 .circle-container > *:nth-of-type(4) {
-  transform: rotate(72deg) translate(18em) rotate(-72deg);
+  transform: rotate(72deg) translate(37.5vh) rotate(-72deg);
 }
 .circle-container > *:nth-of-type(5) {
-  transform: rotate(96deg) translate(18em) rotate(-96deg);
+  transform: rotate(96deg) translate(37.5vh) rotate(-96deg);
 }
 .circle-container > *:nth-of-type(6) {
-  transform: rotate(120deg) translate(18em) rotate(-120deg);
+  transform: rotate(120deg) translate(37.5vh) rotate(-120deg);
 }
 .circle-container > *:nth-of-type(7) {
-  transform: rotate(144deg) translate(18em) rotate(-144deg);
+  transform: rotate(144deg) translate(37.5vh) rotate(-144deg);
 }
 .circle-container > *:nth-of-type(8) {
-  transform: rotate(168deg) translate(18em) rotate(-168deg);
+  transform: rotate(168deg) translate(37.5vh) rotate(-168deg);
 }
 .circle-container > *:nth-of-type(9) {
-  transform: rotate(192deg) translate(18em) rotate(-192deg);
+  transform: rotate(192deg) translate(37.5vh) rotate(-192deg);
 }
 .circle-container > *:nth-of-type(10) {
-  transform: rotate(216deg) translate(18em) rotate(-216deg);
+  transform: rotate(216deg) translate(37.5vh) rotate(-216deg);
 }
 .circle-container > *:nth-of-type(11) {
-  transform: rotate(240deg) translate(18em) rotate(-240deg);
+  transform: rotate(240deg) translate(37.5vh) rotate(-240deg);
 }
 .circle-container > *:nth-of-type(12) {
-  transform: rotate(264deg) translate(18em) rotate(-264deg);
+  transform: rotate(264deg) translate(37.5vh) rotate(-264deg);
 }
 .circle-container > *:nth-of-type(13) {
-  transform: rotate(288deg) translate(18em) rotate(-288deg);
+  transform: rotate(288deg) translate(37.5vh) rotate(-288deg);
 }
 .circle-container > *:nth-of-type(14) {
-  transform: rotate(312deg) translate(18em) rotate(-312deg);
+  transform: rotate(312deg) translate(37.5vh) rotate(-312deg);
 }
 .circle-container > *:nth-of-type(15) {
-  transform: rotate(336deg) translate(18em) rotate(-336deg);
+  transform: rotate(336deg) translate(37.5vh) rotate(-336deg);
 }
 
 </style>

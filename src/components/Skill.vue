@@ -21,7 +21,7 @@ img {
   max-width: 100%;
   border-radius: 50%;
   filter: grayscale(100%);
-  border: solid 5px tomato;
+  border: solid 1vh tomato;
   transition: .15s;
   background-color:white;
 

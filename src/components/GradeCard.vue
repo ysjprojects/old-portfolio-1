@@ -3,8 +3,9 @@
   <div class="flip-card-inner">
     <div class="flip-card-front" :style="backgroundColor">
       <div class="v-center-div add-padding">
-        <h1>{{level}}</h1>
-        <h3>{{subject}}</h3>
+        <span>{{level}}</span>
+        <br>
+        <span>{{subject}}</span>
       </div>
     </div>
     <div class="flip-card-back" :style="backgroundColor">
@@ -52,8 +53,8 @@ export default {
  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
-  width: 200px;
-  height: 200px;
+  width: 12vw;
+  height: 12vw;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -97,9 +98,21 @@ export default {
   transform: rotateY(180deg);
 } 
 
+.flip-card-front   span:nth-of-type(1) {
+  font-size: 2.5vw;
+}
+
+.flip-card-front span:nth-of-type(2) {
+  font-size: 1.5vw;
+}
+
+
 .flip-card-back span {
     font-weight:bold;
-    font-size: 4.5rem;
+    font-size: 7.5vw;
+    height: 1.25em;
+    line-height: 1.5em;
+    display: inline-block;
 }
 </style>
 

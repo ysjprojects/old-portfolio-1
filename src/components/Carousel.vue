@@ -34,11 +34,11 @@
       </div>
       
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <button id="prevBtn" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <button id="nextBtn" class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
@@ -63,6 +63,26 @@ export default {
     Awards, 
     Projects,
     Conclusion
+  },
+  created() {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  unmounted() {
+    window.removeEventListener('scroll',this.handleScroll)
+  },
+
+  methods: {
+    handleScroll() {
+    
+      var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+      if (st > 0){
+          // downscroll code
+          window.getElementById("nextBtn").click()
+      } else {
+          // upscroll code
+          window.getElementById("prevBtn").click()
+      }
+    }
   }
 };
 </script>

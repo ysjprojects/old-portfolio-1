@@ -47,14 +47,14 @@ export default {
 
 
 <style lang="scss" scoped>
-$hexagon-width: 350px;
+$hexagon-width: 20vw;
 $hexagon-height: $hexagon-width*.55;
-$hexagon-margin: 25px;
+$hexagon-margin: 1.5vw;
 $hexagon-title-color: #fff;
 $hexagon-border-color: #fff;
 $hexagon-border-color--hover: #72f88e;
 $hexagon-image-color: #3ea0eb;
-$honeycomb-max-width: 750px;
+$honeycomb-max-width: 43vw;
 $viewport-thereshold: $hexagon-width + $hexagon-margin;
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
@@ -86,8 +86,8 @@ $viewport-thereshold: $hexagon-width + $hexagon-margin;
   justify-content: center;
   align-items: center;
   max-width: $honeycomb-max-width;
-  position:absolute;
-  right:0;
+  position:relative;
+  left:40%;
   padding: 0;
   transform: translateY(#{$hexagon-height/4});
 
@@ -97,7 +97,7 @@ $viewport-thereshold: $hexagon-width + $hexagon-margin;
     height: $hexagon-height;
     margin: $hexagon-height/2.1 $hexagon-margin/2 $hexagon-margin;
     position: relative;
-    padding: 0.5em;
+    padding: 0.5vw;
     cursor:pointer;
 
     text-align: center;
@@ -114,12 +114,12 @@ $viewport-thereshold: $hexagon-width + $hexagon-margin;
       text-transform: uppercase;
       color: #fff;
       font-weight: 700;
-      font-size: 1.75em;
+      font-size: 2.5vw;
       transition: opacity 350ms;
       
       > small {
         font-weight: 300;
-        margin-top: 0.25em;
+        margin-top: 0.25vw;
       }
     }
 

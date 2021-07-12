@@ -4,7 +4,7 @@
             <table id="ladder" cellspacing="0" cellpadding="0">
                 <tr>
                     <td>
-                        <span class="podium-text" style="font-size:7.5rem">2</span>
+                        <span class="podium-text" style="font-size:12.5vw">2</span>
                         <div v-for="award in awards.silver" :key="award">
                             <Award :name="award.name" :year="award.year" :src="award.src" color="#85898d"/> 
                         </div>        
@@ -14,7 +14,7 @@
 
                     </td>
                     <td>
-                        <span class="podium-text" style="font-size:10rem">1</span>
+                        <span class="podium-text" style="font-size:17.5vw">1</span>
                         <div v-for="award in awards.gold" :key="award">
                             <Award :name="award.name" :year="award.year" :src="award.src" color="#f0ba3c"/> 
                         </div>    
@@ -22,7 +22,7 @@
                         </div>
                     </td>
                     <td>
-                        <span class="podium-text" style="font-size:5rem">3</span>
+                        <span class="podium-text" style="font-size:10vw">3</span>
                         <div v-for="award in awards.bronze" :key="award">
                             <Award :name="award.name" :year="award.year" :src="award.src" color="#a15347"/> 
                         </div>    
@@ -30,7 +30,7 @@
                         </div>
                     </td>
                     <td>
-                        <span class="podium-text" style="font-size:2.5rem">MERIT</span>
+                        <span class="podium-text" style="font-size:2.5vw">MERIT</span>
                         <div v-for="award in awards.merit" :key="award">
                             <Award :name="award.name" :year="award.year" :src="award.src" color="#b19cd9"/> 
                         </div>    
@@ -41,7 +41,7 @@
             </table>
         </div>
         <div>
-            <h1>Awards and Achievements</h1>
+            <span style="font-size:2.5vw">Awards and Achievements</span>
         </div>
     </div>
 </template>
@@ -120,27 +120,27 @@ td {
     font-family: courier-new, courier;
 }
 #podium0, #podium1, #podium2, #podium3 {
-    width: 200px;
+    width: 15vw;
     position: relative;
 }
 
 #podium0 { /* gold */
-    height: 250px;
+    height: 40vh;
     background-color: #f0ba3c;
 
 }
 #podium1 { /* silver */
-    height: 200px;
+    height: 32vh;
     background-color: #85898d;
 
 }
 #podium2 { /* bronze */
-    height: 150px;
+    height: 24vh;
     background-color: #a15347;
 }
 
 #podium3 { /*merit*/
-    height: 75px;
+    height: 12vh;
     background-color:#b19cd9;
 }
 

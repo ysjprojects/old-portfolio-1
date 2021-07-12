@@ -3,9 +3,9 @@
         <div v-show="show === true" class="overlay">
         </div>
         <div v-show="show === true" class="overlay-text">
-                <span style="font-size:1rem">{{name}}</span>
-                <br>
-                <span style="font-size:0.9rem">{{year}}</span>
+                <span style="font-size:1.2vw">{{name}}</span>
+                <div style="height:1vw"></div>
+                <span style="font-size:1vw;color:#A9A9A9">{{year}}</span>
         </div>
         <img :src="require(`@/assets/awards/${src}`)" :alt="name"/>
     </div>
@@ -52,24 +52,24 @@ export default {
 
 <style scoped>
 .medal {
-    width:100px;height:100px;background-color:black;margin: 15px 50px;
+    width:5vw;height:5vw;background-color:black;margin: 1vw 5vw;
     transition: all .2s ease-in-out;
     position:relative;
     
 }
 
 .medal:hover { 
-    width:150px;height:150px;margin: 15px 25px;
+    width:10vw;height:10vw;margin: 1vw 2.5vw;
 }
 
 .square-frame {
-    border:5px solid var(--bordercolor);
+    border:0.5vw solid var(--bordercolor);
     box-shadow: inset 0 50px rgba(255,255,255,0.1),
              inset 2px -15px 30px rgba(0,0,0,0.4),
-             2px 2px 5px rgba(0,0,0,0.3);
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
+             2px 2px 5px #0000004d;
+    border-radius: 1vw;
+    -webkit-border-radius: 1vw ;
+    -moz-border-radius: 1vw;
 
 
 }
@@ -77,14 +77,16 @@ export default {
 img {
     width: 100%;
     height:100%;
-    border-radius: 15px;
-    }
+    border-radius: 0.5vw;
+    -webkit-border-radius: 0.5vw;
+    -moz-border-radius: 0.5vw;
+}
 
 .overlay {
     position: absolute;
     width:100%;
     height:100%;
-    border-radius: 15px;
+    border-radius: 0.5vw;
     background-color: black;
     opacity: 0.8;
     
@@ -93,7 +95,7 @@ img {
 .overlay-text {
     position:absolute;
     padding:10%;
-    width: 150px;
+    width: 100%;
     left:50%;
     top:50%;
     transform: translate(-50%,-50%);
