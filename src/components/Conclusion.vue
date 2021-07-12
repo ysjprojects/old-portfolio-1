@@ -83,12 +83,48 @@ export default {
 
 }
 
-.socials-div{
+.socials-div{ 
     position:absolute;
     bottom:7.5vh;
     left:50%;
     transform: translateX(-50%);
 }
+
+.socials-div div {
+	opacity: 0;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+
+}
+
+.socials-div div:nth-child(1) {
+    animation-duration: 1s;
+}
+
+.socials-div div:nth-child(2) {
+    animation-duration: 1s;
+    animation-delay: 5s;
+}
+
+.socials-div div:nth-child(3) {
+    animation-duration: 1s;
+    animation-delay: 10s;
+}
+
+.socials-div div:nth-child(4) {
+    animation-duration: 1s;
+    animation-delay: 15s;
+}
+
+
+@keyframes fadeInOpacity {
+	to {
+		opacity: 1;
+	}
+}
+
 .heart {
   color:#fff;
   position: fixed;

@@ -156,7 +156,7 @@ td {
 }
 
 span{
-    line-height: 1.5em;
+    line-height: 1.25em;
     height: 1em;
 }
 </style>
