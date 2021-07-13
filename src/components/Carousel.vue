@@ -73,6 +73,7 @@ export default {
 
   methods: {
     handleScroll(e) {
+          e.preventDefault();
           var xAxis = e.deltaX;
           var yAxis = e.deltaY;
           if (yAxis > 0 || xAxis < 0) {

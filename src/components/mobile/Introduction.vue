@@ -2,7 +2,7 @@
     <div id="main">
         <div class="container">
             <div class="namecard">
-                <img src="../assets/namecard.png" alt="Hello my name is SJ"/>
+                <img src="../../assets/namecard.png" alt="Hello my name is SJ"/>
             </div>
             <div class="divider">
             </div>
@@ -24,7 +24,6 @@ export default {
 <style scoped>
 #main {
     width: 100vw;
-    height: 100vh;
     background: #bdc3c7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -51,14 +50,14 @@ export default {
 }
 
 .divider {
-    width:5vw;
-    border-top: 1vh solid #A9A9A9;
+    width:10vw;
+    border-top: 1vw solid #A9A9A9;
     margin: 0 auto;
 }
 
 .namecard img {
-    height: 50vh;
-    margin:30px;
+    width: 75vw;
+    margin: 10vw;
 }
 /* The typing effect */
 @keyframes typing {
@@ -74,8 +73,6 @@ export default {
 
 div.container {
     position: relative;
-    top:50%;
-    transform: translateY(-50%);
     margin: 0 auto;
 }
 </style>

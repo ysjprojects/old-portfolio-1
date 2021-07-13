@@ -1,4 +1,10 @@
-import { createApp } from "vue";
-import App from "./App.vue";
+import { createApp } from "vue"
+import App from "./App.vue"
+import vClickOutside from 'v-click-outside'
 
-createApp(App).mount("#app");
+var app = createApp(App)
+
+app.use(vClickOutside)
+
+app.mount("#app")
+
