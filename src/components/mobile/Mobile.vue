@@ -5,6 +5,9 @@
       <About/>
       <Education/>
       <Skills/>
+      <Awards/>
+      <Projects/>
+      <Conclusion/>
   </div>
 </template>
 
@@ -13,16 +16,20 @@ import Introduction from "./Introduction.vue"
 import About from "./About.vue"
 import Education from "./Education.vue"
 import Skills from "./Skills.vue"
-/*import Awards from "./Awards.vue"
+import Awards from "./Awards.vue"
 import Projects from "./Projects.vue"
-import Conclusion from "./Conclusion.vue"*/
+import Conclusion from "./Conclusion.vue"
+
 export default {
   name: "Mobile",
   components: {
       Introduction,
       About,
       Education,
-      Skills
+      Skills,
+      Awards,
+      Projects,
+      Conclusion
   }
   /*components: {
     Introduction,

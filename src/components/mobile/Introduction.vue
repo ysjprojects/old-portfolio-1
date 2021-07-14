@@ -7,7 +7,7 @@
             <div class="divider">
             </div>
             <div class="typewriter">
-                <h1>I am a student | developer | blockchain enthusiast.</h1>
+                <h1>student | developer | builder</h1>
             </div>
         </div>
     </div>
@@ -37,7 +37,7 @@ export default {
     margin-bottom:30px;
 }
 .typewriter h1 {
-  font-size:2.5vw;
+  font-size:4.5vw;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */

@@ -7,7 +7,7 @@
             <div class="divider">
             </div>
             <div class="typewriter">
-                <h1>I am a student | developer | blockchain enthusiast.</h1>
+                <h1>student | developer | builder</h1>
             </div>
         </div>
     </div>

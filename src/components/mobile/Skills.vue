@@ -69,7 +69,7 @@ export default {
                 "src":"nodejs.png"},
                 
             ],
-            content: '<span style="font-size:7.5vw">My Skills</span><div style="width:5vw;border-top: 0.5vw solid #A9A9A9;margin: 0 auto;"></div><p style="margin-top:2vw;font-size:3.5vw">hover over the logos for more details</p>',
+            content: '<span style="font-size:7.5vw">My Skills</span><div style="width:5vw;border-top: 0.5vw solid #A9A9A9;margin: 0 auto;"></div><p style="margin-top:2vw;font-size:3.5vw">click on logos for more details</p>',
             timer:null
         }
     },
@@ -77,7 +77,7 @@ export default {
         loadSkillInfo: function(name, experience){
             clearTimeout(this.timer)
             this.content = `<span style="font-size:7.5vw">${name}</span><br><span style="font-size:3.5vw">${experience}</span>`
-            this.timer = setTimeout(() => this.content = '<span style="font-size:7.5vw">My Skills</span><div style="width:5vw;border-top: 0.5vw solid #A9A9A9;margin: 0 auto;"></div><p style="margin-top:2vw;font-size:3.5vw">hover over the logos for more details</p>',5000);
+            this.timer = setTimeout(() => this.content = '<span style="font-size:7.5vw">My Skills</span><div style="width:5vw;border-top: 0.5vw solid #A9A9A9;margin: 0 auto;"></div><p style="margin-top:2vw;font-size:3.5vw">click on logos for more details</p>',5000);
             return
         }
     }

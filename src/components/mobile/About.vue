@@ -9,16 +9,16 @@
             <div class="wrapper">
                 
                 <div class="">
-                    <span class="align-bottom">I am from Singapore</span>
+                    <span>I am from Singapore</span>
                 </div>
                 <div class="">
-                    <span class="align-bottom">I am a Business Analytics undergraduate from the National University of Singapore (NUS)</span>
+                    <span>I am a Business Analytics undergraduate from the National University of Singapore (NUS)</span>
                 </div>
                 <div class="">
-                    <span class="align-bottom">I am fluent in Python, front-end development and Java</span>
+                    <span>I am fluent in Python, front-end development and Java</span>
                 </div>
                 <div class="">
-                    <span class="align-bottom"> My hobbies include playing the piano and cycling</span>
+                    <span> My hobbies include playing the piano and cycling</span>
                 </div>
                 
             </div>
@@ -76,8 +76,6 @@ export default {
 span {
     font-weight: bold;
     font-size: 5vw;
-    height: 1.25em;
-    line-height: 1.5em;
     color: #f35626;
 	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
 	-webkit-background-clip: text;

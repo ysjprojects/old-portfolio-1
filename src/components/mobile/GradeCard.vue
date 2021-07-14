@@ -1,5 +1,8 @@
 <template>
-<div class="flip-card">
+<div class="flip-card" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" 
+ unselectable="on"
+ onselectstart="return false;" 
+ onmousedown="return false;" ontouchstart>
   <div class="flip-card-inner">
     <div class="flip-card-front" :style="backgroundColor">
       <div class="v-center-div add-padding">
@@ -72,7 +75,6 @@ export default {
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:active .flip-card-inner {
-  cursor:pointer;
   transform: rotateY(180deg);
 }
 
