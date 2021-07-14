@@ -77,6 +77,7 @@ span {
     font-weight: bold;
     font-size: 5vw;
     color: #f35626;
+    word-wrap: break-word;
 	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
