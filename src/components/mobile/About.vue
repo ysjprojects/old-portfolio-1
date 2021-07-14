@@ -74,6 +74,7 @@ export default {
 
     
 span {
+    display:block;
     font-weight: bold;
     font-size: 5vw;
     color: #f35626;
